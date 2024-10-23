@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="highlight">
+            <img src="assets/background.png" class="backgroundImage" >
+
+            <div class="search">
+                <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter your city..." />
+                <button type="button" class="searchBtn"><img src="assets/icons8-search.svg" /></button>
+            </div>
+
+            <div class="degree">
+                <p class="currentDegree">3°</p>
+                <p class="feelDegree">Feels like -2°</p>
+            </div>
+
+            <div class="visual">
+                <img src="assets/cloudy.png" class="weatherIcon" height="100px">
+                <p class="weatherIconText">Cloudy</p>
+            </div>
+            <p class="currentDate">January 18, 16:14</p>
+            <div class="dayNight">
+                <p class="dayTemp">Day 3°</p>
+                <p class="nightTemp">night -1°</p>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="days">
+                <button class="today">Today</button>
+                <button class="tomorrow">Tomorrow</button>
+                <button class="after10days">10 Days</button>
+            </div>
+
+            <div class="wrpu">
+                <div class="windSpeed">
+                    <img src="assets/icons8-wind-30.png" alt="" class="windSpeedIcon">
+                    <p class="windSpeedText">Wind Speed</p>
+                    <P class="windSpeedValue">12 Km/h</P>
+                </div>
+                <div class="rainChance">
+                    <img src="assets/icons8-heavy-rain-50.png" class="rainChanceIcon" height="40px">
+                    <p class="rainChanceText">Rain Chance</p>
+                    <P class="rainChanceValue">24%</P>
+                </div>
+                <div class="pressure">
+                    <img src="assets/icons8-steady-pressure-50.png" class="pressureIcon" height="30px">
+                    <p class="pressureText">Pressure</p>
+                    <P class="pressureValue">720 hpa</P>
+                </div>
+                <div class="uvIndex">
+                    <img src="assets/icons8-sun-48.png" class="uvIndexIcon" height="30px">
+                    <p class="uvIndexText">UV Index</p>
+                    <P class="uvIndexValue">2.3</P>
+                </div>
+            </div>
+
+            <div class="hourlyForcast">
+                <div class="nav">
+                    <img src="assets/icons8-time-50.png" class="hourlyForcastIcon" height="20px">
+                    <p>Hourly Forcast</p>
+                </div>
+                <div class="main">
+                    
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="sunrise">
+                    <img src="assets/icons8-sunrise-96.png" class="sunriseIcon" height="30px">
+                    <p class="sunriseText">Sunrise</p>
+                    <P class="sunriseValue">4:20 AM</P>
+                </div>
+                <div class="sunset">
+                    <img src="assets/icons8-sunset-96.png" class="sunsetIcon" height="30px">
+                    <p class="sunsetText">Sunset</p>
+                    <P class="sunsetValue">4:50 PM</P>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

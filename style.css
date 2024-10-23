@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Georama", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    background-color: #222;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 412px;
+    height: 892px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6EDFF;
+    border: none;
+    border-radius: 35px;
+    /* position: absolute; */
+}
+
+
+/* Upper highlight part */
+.highlight {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    /* position: relative; */
+    top: -16px;
+    color: white;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.highlight .backgroundImage {
+    border-radius: 35px;
+    margin: 0;
+    grid-area: 1/1/4/3;
+}
+
+.highlight .search {
+    grid-area: 1/1/2/-1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight .search #searchQuery {
+    border: none;
+    border-radius: 35px;
+    padding: 10px 120px 10px 10px;
+}
+
+.highlight .search .searchBtn {
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+}
+
+.highlight .degree {
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px;
+
+}
+
+.highlight .degree .currentDegree {
+    grid-area: 1/1/-1/3;
+    font-size: 120px;
+    font-weight: 500;
+}
+
+.highlight .degree .feelDegree {
+    grid-area: 2/2/3/3;
+    font-size: large;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.highlight .visual {
+    grid-area: 2/2/3/-1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight .currentDate {
+    grid-area: 3/1/4/2;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.highlight .dayNight {
+    grid-area: 3/2/4/3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Lower Details part */
+.detail {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+}
+
+.detail .days {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.detail .days .today {
+    border: none;
+    border-radius: 15px;
+    background-color: #E0B6FF;
+    padding: 10px 30px;
+    font-size: medium;
+}
+
+.detail .days .tomorrow {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 30px;
+    font-size: medium;
+}
+
+.detail .days .after10days {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 30px;
+    font-size: medium;
+}
+
+.detail .wrpu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+/* windspeed */
+.detail .wrpu .windSpeed {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 8px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+}
+.detail .wrpu .windSpeed .windSpeedIcon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-self: center;
+    border-radius: 15px;
+}
+.detail .wrpu .windSpeed .windSpeedText{
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: flex-end;
+}
+.detail .wrpu .windSpeed .windSpeedValue{
+    grid-area: 2/2/3/3;
+}
+/* rainchance */
+.detail .wrpu .rainChance {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+}
+.detail .wrpu .rainChance .rainChanceIcon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-self: center;
+    border-radius: 15px;
+}
+.detail .wrpu .rainChance .rainChanceText{
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: flex-end;
+}
+.detail .wrpu .rainChance .rainChanceValue{
+    grid-area: 2/2/3/3;
+}
+/* pressure */
+.detail .wrpu .pressure {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+}
+.detail .wrpu .pressure .pressureIcon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-self: center;
+    border-radius: 15px;
+}
+.detail .wrpu .pressure .pressureText{
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: flex-end;
+}
+.detail .wrpu .pressure .pressureValue{
+    grid-area: 2/2/3/3;
+}
+/* uv index */
+.detail .wrpu .uvIndex {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+}
+.detail .wrpu .uvIndex .uvIndexIcon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-self: center;
+    border-radius: 15px;
+}
+.detail .wrpu .uvIndex .uvIndexText{
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: flex-end;
+}
+.detail .wrpu .uvIndex .uvIndexValue{
+    grid-area: 2/2/3/3;
+}
+
+/* hourly forcast */
+.detail .hourlyForcast{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.detail .hourlyForcast .nav{
+    display: flex;
+    gap: 10px;
+}
+.detail .hourlyForcast .main{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.detail .hourlyForcast .main .hourlyForcastDetails{
+    text-align: center;
+}
+
+
+.detail .footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+/* sunrise */
+.detail .footer .sunrise {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 8px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+}
+.detail .footer .sunrise .sunriseIcon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-self: center;
+    border-radius: 15px;
+}
+.detail .footer .sunrise .sunriseText{
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: flex-end;
+}
+.detail .footer .sunrise .sunriseValue{
+    grid-area: 2/2/3/3;
+}
+/* sunset */
+.detail .footer .sunset {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 8px;
+    background-color: #e5dbff;
+    border-radius: 15px;
+}
+.detail .footer .sunset .sunsetIcon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-self: center;
+    
+    border-radius: 15px;
+}
+.detail .footer .sunset .sunsetText{
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: flex-end;
+}
+.detail .footer .sunset .sunsetValue{
+    grid-area: 2/2/3/3;
+}
+
